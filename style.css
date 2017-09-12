@@ -1,0 +1,143 @@
+/*---初期設定---*/
+body {
+	margin: 30px 60px;
+	font-family: serif;
+	background-image: url(textures/06-white-cardboard.png);
+	background-repeat: repeat;
+	color: black;
+	}
+
+h1 {
+	color: black;
+	font-size: 50px;
+	text-shadow: 1px 1px 2px white;
+	margin: 0 0 0 0;
+}
+
+h2{
+	color:white;
+	background-color:rgb(0,128,255);
+	margin:10px 0;
+	padding: 10px 10px;
+	opacity: 0.5;
+	font-size: 25px;
+	clear: both;
+}
+
+p {
+	color: black;
+	font-size: 18px;
+	line-height: 1.0;
+}
+
+a:link { color: blue; }
+a:hover { color:red; }
+a:active {color: yellow;}
+
+section, article, nav, header, main, footer{
+	display: block;
+}
+
+#page{
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*---ナビゲーション---*/
+nav ul{
+	overflow: hidden;
+	margin: 0 0 10px 0;
+	padding: 0;
+	line-height: 1.0;
+	background: gray;
+	opacity: 0.5;
+}
+
+nav li, nav a{
+	display: block;
+}
+
+nav li{
+	width: 24.92%;
+	float: left;
+	border-right: 1px solid white;
+}
+
+nav a{
+	color:white;
+	padding: 6px 0;
+	text-align: center;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: white;
+	background: red;
+}
+
+/*---投票---*/
+#characters{
+	height: 120px;
+}
+
+#characters img{
+	float: left;
+	width: 10%;
+}
+
+#dropbox{
+	width: 100%;
+	height:500px;
+	margin:0px;
+	background-color: white;
+	border: 1px solid black;
+}
+
+#dropbox img{
+	width: 10%;
+}
+
+#box{
+	margin: 20px 0 0 0;
+	padding: 20px 0 0 0;
+	clear:both;
+}
+
+/*---ヘッダー---*/
+header h2{
+	background: black;
+}
+
+header img{
+	width: 100%;
+	height: 600px;
+	display: hidden;
+}
+
+section img{
+	float:left;
+	width: 40%;
+}
+
+video{
+	float:right;
+	width:60%;
+}
+
+div video{
+	padding: 50px 0;
+}
+
+.description{
+	clear:both;
+	width:100%;
+	padding: 20px 0 0;
+}
+
+footer {
+	color:black;
+	clear:both;
+	text-align:center;
+	padding: 20px 0 0;
+}
+	

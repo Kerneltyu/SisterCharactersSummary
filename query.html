@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" lang="ja">
+<link rel="stylesheet" href="votestyle.css" >
+</head>
+<body>
+<form action="sample.cgi" method="post">
+<fieldset>
+<legend>情報</legend>
+<p>
+text : <input type="text" name="type01">
+</p>
+<p> 
+password : <input type="password" name="type02">
+</p>
+<p>
+checkbox : 
+<input type="checkbox" name="type03" value="c1" checked>　項目１
+<input type="checkbox" name="type03" value="c2" checked>　項目２
+<input type="checkbox" name="type03" value="c3" checked>　項目３
+</p>
+<p>
+radio : 
+<input type="radio" name="type04" value="r1" checked>項目１
+<input type="radio" name="type04" value="r2">項目２
+<input type="radio" name="type04" value="r3">項目３
+</p>
+</fieldset>
+<p>
+<textarea id="sample1" row="3" cols="30">
+入力してください。
+</textarea>
+</p>
+<p>
+file : <input type="text" name="type05">
+</p>
+<p>
+hidden : <input type="hidden" value="h1" name="type06">
+</p>
+<p>
+submit : <input type="submit">
+</p>
+<p>
+reset : <input type="reset">
+</p>
+<p>
+button : <input type="button" value="ボタン">
+</p>
+<p>
+image : <input type="image" src="shell.jpg" alt="送信">
+</p>
+</form>
+
+<hr>
+
+<table border="1">
+<caption>キャプション</caption>
+<thead>
+<tr><th colspan="3">セル１</th></tr>
+</thead>
+<tfoot>
+<tr><td>セル１</td><td>セル１</td><td rowspan="2">セル１</td></tr>
+</tfoot>
+<tbody>
+<tr><td>セル１</td><td>セル１</td><</tr>
+</tbody>
+</table>
+
+<hr>
+
+<canvas id="canvas1" width="300" height="200"></canvas>
+<script type="text/javascript">
+	var canvas = document.getElementById("canvas1");
+	var context = canvas.getContext("2d");
+	
+	context.fillRect(0, 0, 150, 100);
+	context.fillText("Hello, Canvas!", 155, 110);
+	context.beginPath();
+	context.moveTo(0,100);
+	context.lineTo(300, 100);
+	context.moveTo(150,0);
+	context.closePath();
+</script>
+</body>
+</html>
